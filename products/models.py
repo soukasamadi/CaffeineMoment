@@ -44,7 +44,6 @@ class Product(models.Model):
     description = models.TextField()
     product_details = models.TextField()
     features = models.TextField()
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
     old_price = models.DecimalField(default=0,
                                     max_digits=6, decimal_places=2)
     price = models.DecimalField(
