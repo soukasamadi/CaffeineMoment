@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'django_summernote',
     'crispy_forms',
+    'crispy_bootstrap4',
     'home',
     'products',   
 ]
@@ -47,6 +48,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'CaffeineMoment.urls'
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
+
 
 TEMPLATES = [
     {
@@ -65,6 +69,10 @@ TEMPLATES = [
                 'django.template.context_processors.media',
                 'products.context_processors.products_selected',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
