@@ -1,0 +1,58 @@
+<!-- MAIN NAVBAR -->
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'index' %}" id="specials-link">
+                HOME
+            </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SHOP
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{%url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{%url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{%url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                COFFE
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+                <a href="{% url 'products' %}?category=Espresso" class="dropdown-item">Espresso</a>
+                <a href="{% url 'products' %}?category=Filter" class="dropdown-item">Filter</a>
+                <a href="{% url 'products' %}?category=Premium Picks" class="dropdown-item">Premium Picks</a>
+                <a href="{% url 'products' %}?category=Espresso,Filter,Premium Picks" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SPECIALS
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                <a href="{% url 'products' %}?product_status=New" class="dropdown-item">New </a>
+                <a href="{% url 'products' %}?product_status=Sales" class="dropdown-item">Sales</a>
+                <a href="{% url 'products' %}?product_status=New,Sales," class="dropdown-item">All Specials</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                REVIEWS
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                <a href=" url 'reviews' " class="dropdown-item">Customers Reviews</a>
+                {% if user.is_authenticated or user.is_superuser %}
+                <a href=" url 'add_review' " class="dropdown-item">Add Review</a>
+                {% else %}
+                {% endif %}
+            </div>
+        </li>
+    </ul>
+</div>
+<!-- END OF MAIN NAVBAR -->
