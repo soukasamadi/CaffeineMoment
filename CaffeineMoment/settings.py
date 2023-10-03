@@ -31,10 +31,12 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'django_summernote',
+    'django_countries',
     'crispy_forms',
     'crispy_bootstrap4',
     'home',
-    'products',  
+    'products',
+    'bag',
     'profiles',
     'checkout',
 ]
