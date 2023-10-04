@@ -1,0 +1,19 @@
+{% load static %}
+
+{% block content %}
+<!--  VIDEO SECTION-->
+<main id="intro-section">
+   <video class="display-desktop" src="{{ MEDIA_URL }}video/caffeineMoment-video.mp4" muted loop autoplay></video>
+    <video class="display-mobile" src="{{ MEDIA_URL }}video/caffeineMoment-video.mp4" muted loop autoplay></video>
+   <div class="overlay"></div>
+   <div class="text-box">
+      <h3>Flavour explosion in your cup</h3>
+      <a href="{% url 'product' %}" class="btn-intro" aria-label="Go to the home page">To The Shop</a>
+   </div>
+</main>
+<!-- END OF VIDEO SECTION-->
+{% endblock %}
+
+<!-- SCRIPTS -->
+{% include "includes/scripts.html" %}
+<!-- END OF SCRIPTS -->

@@ -543,6 +543,77 @@ input[name='q']::placeholder {
 }
 
 
+/*******************************
+*                              *
+*         INDEX PAGE           *
+*                              *
+*******************************/
+
+#intro-section {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: var(--overlay-black);
+    color: var(--text-white);
+    overflow: hidden;
+}
+
+#intro-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0px 80%;
+       object-position: 0px 80%;
+}
+
+#intro-section .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-black);
+    opacity: 0.5;
+    z-index: 2;
+}
+
+#intro-section .text-box {
+    position: absolute;
+    left: 50px;
+    z-index: 10;
+    margin-top: 25px;
+}
+
+#intro-section .text-box h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+#intro-section .text-box h3 {
+    font-size: clamp(1.7rem, 2.5vw, 2.5rem);
+    margin-bottom: 15px;
+}
+
+#intro-section .text-box h3 {
+    letter-spacing: 4px;
+}
 
 
 
