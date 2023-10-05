@@ -88,8 +88,6 @@
                             <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Card">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                        {% endif %}
-                        {% endwith %}
                     </div>
                 </form>
             </div>
@@ -112,7 +110,7 @@
 <!-- END OF PRODUCT DETAILS SECTION -->
 
 <!-- PRODUCTS PROMOTION CAROUSEL -->
-{% include "includes/products_promotion.html" %}
+{% include "includes/products_promotions.html" %}
 <!-- END OF PRODUCTS PROMOTION CAROUSEL -->
 {% endblock %}
 
