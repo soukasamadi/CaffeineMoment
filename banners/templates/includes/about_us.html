@@ -1,0 +1,92 @@
+{% load static %}
+
+{% block content %}
+
+<!-- About Us Section -->
+<img class="about-top-img" src="{{ MEDIA_URL }}coffe-tree-img.jpg"
+    alt="coffe tree image">
+<div class="global-about">
+<div class="about-container">
+    <h2>About Us</h2>
+    <div class="accordion">
+        <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Flavor profile</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+                <p>We are here to create the most exciting taste experiences for you. For this, we are constantly on the lookout for the
+                most interesting and diverse flavor profiles from all over the world.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Seasonal harvests</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+                <p>We source our coffee seasonally, which means we only buy the right amount of the annual harvest to meet seasonal demand
+                and to ensure that we always have the freshest and most aromatic product for you.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Directly traded</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+                <p>We prefer to buy our coffee directly from the local producers in order to ensure direct quality control of the
+                processing methods and on the other hand to guarantee that premium prices are paid for higher quality coffees, which
+                contribute significantly to the sustainability and livelihood of the farmers.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">More than Fairtrade</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+                <p>Fairtrade certificates are a good start, but they are far from meeting our expectations of truly fair coffee. That's why
+                we don't focus on traditional Fairtrade prices, but on quality. We believe that it is fair to pay a higher price for
+                high-quality coffee, which is on average four times the Fairtrade price for our Standard Specialty Coffees. </p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Freshness</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+                <p>We store our seasonally sourced green coffee beans in our custom-made, air-conditioned bean humidor (Cooling Strorage)
+                to keep all aromas as fresh as possible until roasting and thus provide you with the freshest and most aromatic coffee.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Roasting Style</span><span
+                    class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+                <p>We roast for sweetness and test until we have found the ideal roasting profile for each coffee and highlight the
+                individual potential of each coffee. We roast on one of the most innovative and environmentally friendly roasters of the
+                Loring brand. For our Competition Coffees (Premium Picks) we roast in small batches on a Stronghold roaster.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Sorting</span><span
+                    class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+                <p>As one of the most innovative roasters in Europe, we use two so-called color sorters to sort our coffee in order to
+                achieve the clearest possible result in the cup. The first sorter is used before roasting and sorts out the finest
+                particles from our high-quality green coffee. After roasting, the coffee passes through five pitters and is then sorted
+                by another color sorter, which sorts out beans that are too light and too dark.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- END OF ABOUT US SECTION -->
+
+<script>
+    const items = document.querySelectorAll(".accordion button");
+
+        function toggleAccordion() {
+            const itemToggle = this.getAttribute('aria-expanded');
+
+            for (i = 0; i < items.length; i++) {
+                items[i].setAttribute('aria-expanded', 'false');
+            }
+
+            if (itemToggle == 'false') {
+                this.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script>
+
+{% endblock %}
