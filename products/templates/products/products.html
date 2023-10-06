@@ -87,10 +87,6 @@
                                         </a>
                                     </p>
                                     {% endif %}
-                                    <div>
-                                        <a href="{% url 'product_detail' product.id %}"
-                                            class="btn btn-outline-black rounded-0 mt-2 bg-warning">Add To Card</a>
-                                    </div>
                                     {% if request.user.is_superuser %}
                                     <hr>
                                     <div class="text-center mt-3">
