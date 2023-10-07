@@ -3,7 +3,7 @@
 *        GOOGLE FONTS          *
 *                              *
 *******************************/
-
+.logo-mobile
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
 
 /* Sofia Sans Condensed & Montserrat & Nanum Myeongjo*/
@@ -138,6 +138,10 @@ body.modal-open {
 
 body.modal-open[style] {
     padding-right: 0px !important;
+}
+
+.nav-shad {
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -518,19 +522,6 @@ input[name='q']::placeholder {
     color: var(--text-light-grey);
 }
 
-/* Carousel */
-.carousel {
-    margin-top: -15px;
-}
-
-#delivery-banner {
-    margin-top: 25px;
-}
-
-#delivery-banner h4 {
-    padding: 8px 0;
-}
-
 /* Selected Products */
 #products_selected {
     padding: 15px;
@@ -898,6 +889,7 @@ input[name='q']::placeholder {
     .logo-mobile {
         display: block !important;
         font-size: 1rem;
+        text-align: center;
     }
 
     .nav-link {
@@ -1018,6 +1010,8 @@ input[name='q']::placeholder {
 @media only screen and (max-width: 537px) {
     .logo-mobile {
         padding-top: 10px;
+        text-align: center;
+        padding-left: 25vw;
     }
 
     #footer .sub-title {
