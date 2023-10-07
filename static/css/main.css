@@ -388,6 +388,7 @@ form .mce_inline_error{
     position: relative;
     width: 60%;
     margin: 0 auto;
+    border-radius: 9px;
 }
 
 
@@ -859,7 +860,8 @@ input[name='q']::placeholder {
 }
 
 @media only screen and (max-width: 1100px) {
-    #mc_embed_signup {
+    #mc_embed_signup,
+    form .mce_inline_error {
         width: 100%;
     }
 }
@@ -945,7 +947,8 @@ input[name='q']::placeholder {
         padding: 10px 15px;
     }
 
-    #mc_embed_signup {
+    #mc_embed_signup,
+    form .mce_inline_error {
         width: 100%;
     }
 
@@ -1076,9 +1079,11 @@ input[name='q']::placeholder {
         width: 255px;
     }
 
-    #mc_embed_signup {
+    #mc_embed_signup, 
+    form .mce_inline_error {
         width: 100%;
     }
+
 }
 
 @media only screen and (min-width: 434px) and (max-width: 460px) {
