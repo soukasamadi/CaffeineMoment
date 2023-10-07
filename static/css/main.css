@@ -367,11 +367,11 @@ body.modal-open[style] {
 }
 
 .bt {
-    margin-left: -160px;
+    width: 60%;
     font-size: 16px;
     display: inline-block;
     font-weight: 600;
-    padding: 16px 32px;
+    padding: 10px 32px;
     border-radius: 20px;
 
     /* Only necessary for .btn */
@@ -380,6 +380,14 @@ body.modal-open[style] {
     color: #fff;
     background-color:rgb(36, 35, 35);
 
+
+}
+
+form .mce_inline_error{
+    display: inline-block;
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
 }
 
 
@@ -852,7 +860,7 @@ input[name='q']::placeholder {
 
 @media only screen and (max-width: 1100px) {
     #mc_embed_signup {
-        width: 310px;
+        width: 100%;
     }
 }
 
@@ -938,7 +946,7 @@ input[name='q']::placeholder {
     }
 
     #mc_embed_signup {
-        width: 290px;
+        width: 100%;
     }
 
     .news input[type="email"] {
@@ -1069,7 +1077,7 @@ input[name='q']::placeholder {
     }
 
     #mc_embed_signup {
-        width: 250px;
+        width: 100%;
     }
 }
 
