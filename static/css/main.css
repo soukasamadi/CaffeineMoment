@@ -98,7 +98,8 @@ i {
 }
 
 .logo-mobile,
-.display-mobile {
+.display-mobile,
+.slider-display-mobile {
     display: none !important;
 }
 
@@ -147,7 +148,7 @@ body.modal-open[style] {
 *******************************/
 
 .display-desktop{
-    width: 100%;
+    width: 100vw;
     height: auto;
     margin-top: -15%;
 }
@@ -286,6 +287,7 @@ body.modal-open[style] {
     height: 100px;
     overflow: hidden;
     background-color: #f3ece7;
+}
 
     .marquee {
         top:35%;
@@ -304,7 +306,7 @@ body.modal-open[style] {
     b {
         padding-left: 10px;
     }
-}
+
 
 @keyframes marquee {
     0% {
@@ -919,9 +921,6 @@ input[name='q']::placeholder {
         font-size: 1rem;
     }
 
-    #delivery-banner h4 {
-        font-size: .9rem;
-    }
 
     .btn.btn-outline-black.rounded-0,
     .btn.btn-black.rounded-0,
@@ -982,16 +981,10 @@ input[name='q']::placeholder {
         width: 300px;
     }
 
-    #footer .trust-company {
-        width: 180px;
-        position: relative;
-        margin-top: -130px;
-        margin-left: 380px;
-    }
-
     #footer .copyright p {
         width: initial;
     }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -1004,6 +997,15 @@ input[name='q']::placeholder {
     }
 
     .display-mobile {
+        display: block !important;
+        width: 100vw;
+    }
+
+    .slider-display-desktop {
+        display: none !important;
+    }
+
+    .slider-display-mobile {
         display: block !important;
     }
 
