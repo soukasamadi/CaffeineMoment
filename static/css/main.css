@@ -877,6 +877,30 @@ body.modal-open {
     margin: 100px 0;
 }
 
+.rev-text {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 15px 0;
+    margin-top: 30%;
+}
+
+.p-rev{
+    color: #ffffff;
+}
+
+.rv-btn{
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    color: var(--fully-black);
+}
+
+.rv-btn:hover{
+    background-color: var(--fully-black);
+    color: #ffffff;
+}
+
 
 /*******************************
 *                              *

@@ -17,34 +17,33 @@
             <div class="col-12 text-center">
                 {% if reviews %}
                 <h1 class="sub-title mt-70">Edit Review As:</h1>
-                <p><i class="fas fa-user fa-lg interactive-color"></i> {{ user.username | slice:":10" }}</p>
+                <p><i class="fas fa-user fa-lg "></i> {{ user.username | slice:":10" }}</p>
                 {% else %}
                 <h1 class="sub-title mt-70">Add Review As:</h1>
-                <p><i class="fas fa-user fa-lg interactive-color"></i> {{ user.username | slice:":10" }}</p>
+                <p><i class="fas fa-user fa-lg "></i> {{ user.username | slice:":10" }}</p>
                 {% endif %}
             </div>
-            <div class="col-md-6 mt-5 p-2">
+            <div class="col-md-6 mt-5" style="background:linear-gradient(0deg, rgba(24, 3, 16, 0.3), rgba(50, 47, 49, 0.3)), url(https://www.leuchtfeuer.coffee/cdn/shop/files/kaffee-aroma_1340x1340_crop_center.jpg?v=1677595879); padding-left: 5%; padding-right: 5%;">
                 {% if reviews %}
-                <h2 class="sub-title interactive-color">Change your review at<br>any time!</h2>
+                <h2 class="rev-text">Change your review at<br>any time!</h2>
                 {% else %}
-                <h2 class="sub-title interactive-color">Your Opinion Matters!</h2>
+                <h2 class="rev-text">Your Opinion Matters!</h2>
                 {% endif %}
-                <p class="p-1 text-justify">
-                    We want to hear from you and this is your chance to let us know what you think
-                    about our company and products. Your feedback will help us to improve the quality of the services.
+                <p class="p-1 text-justify p-rev">
+                    Thank You for deciding to drink our coffe! It would be great to hear about your impressions.
+                    So please leave us a review. Believe that your feedback helps us to prepare your next tasty coffe.
                 </p>
-                <p class="p-1 text-justify">
-                    Please take this brief survey to provide your opinion about our website. The
-                    form should take no longer than 5 minutes to complete.
+                <p class="p-1 text-justify p-rev">
+                    The form should take no longer than 5 minutes to complete. We really appreciate your support.
                 </p>
-                <p class="p-1">
+                <p class="p-1 p-rev">
                     Thanks very much.
                 </p>
-                <p class="p-1">
-                    Watches & Clocks
+                <p class="p-1 p-rev">
+                    CaffeineMoment Team.
                 </p>
             </div>
-            <div class="col-md-6 p-2">
+            <div class="col-md-6">
                 <form method="post" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
@@ -55,9 +54,9 @@
                     {% endif %}
                     {% endfor %}
                     <div class="text-center">
-                        <button class="btn btn-secondary right mb-4" type="submit" value="Save"
+                        <button class="btn btn-secondary right mb-4 rv-btn" type="submit" value="Save"
                             aria-label="Submit Review">
-                            Submit
+                            Share
                         </button>
                     </div>
                 </form>
