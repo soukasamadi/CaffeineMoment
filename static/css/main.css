@@ -838,6 +838,45 @@ input[name='q']::placeholder {
 }
 
 
+/*******************************
+*                              *
+*          REVIEWS CSS         *
+*                              *
+*******************************/
+
+#add_review form {
+    margin: 50px auto 0;
+    display: block;
+    width: inherit;
+}
+
+.modal {
+    top: 100px !important;
+}
+
+body.modal-open {
+    overflow: visible !important;
+}
+
+.modal-open[style] {
+    padding-right: 0px !important;
+}
+
+.btn-edit {
+    padding: 6px 26px;
+    margin-right: 8PX;
+}
+
+.btn-danger {
+    border: none;
+    padding: 6px 20px;
+    margin-right: 8PX;
+}
+
+#customers-reviews {
+    margin: 100px 0;
+}
+
 
 /*******************************
 *                              *
@@ -980,7 +1019,7 @@ input[name='q']::placeholder {
 }
 
 @media only screen and (max-width: 768px) {
-
+    
 }
 
 @media only screen and (max-width: 600px) {
