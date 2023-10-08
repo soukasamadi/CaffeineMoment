@@ -160,7 +160,7 @@ body.modal-open[style] {
 
 /*******************************
 *                              *
-*          ABOUT US SECTION    *
+*      ABOUT US SECTION        *
 *                              *
 *******************************/
 
@@ -391,6 +391,10 @@ form .mce_inline_error{
 
 #mc_embed_signup .foot {
     display: block;
+}
+
+.accordion button[aria-expanded='true']+.accordion-content {
+    max-height: fit-content;
 }
 
 
