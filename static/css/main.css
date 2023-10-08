@@ -691,6 +691,11 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+.lg-cancel{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
 
 
 /*******************************
