@@ -372,29 +372,25 @@ body.modal-open[style] {
     line-height: 3;
 }
 
-.bt {
-    width: 60%;
-    font-size: 16px;
-    display: inline-block;
-    font-weight: 600;
-    padding: 10px 32px;
-    border-radius: 20px;
-
-    /* Only necessary for .btn */
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    background-color:rgb(36, 35, 35);
-
-
-}
-
 form .mce_inline_error{
     display: inline-block;
+    background-color: transparent;
     position: relative;
     width: 60%;
     margin: 0 auto;
     border-radius: 9px;
+}
+
+#mc_embed_signup .button{
+    background-color: rgb(36, 35, 35);
+    font-size: 20px;
+    height: 60px;
+    padding: 0;
+    width: 100%;
+}
+
+#mc_embed_signup .foot {
+    display: block;
 }
 
 
