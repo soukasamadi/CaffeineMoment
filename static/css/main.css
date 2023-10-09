@@ -160,6 +160,11 @@ div#card-element.mb-3.StripeElement.StripeElement--empty {
   margin-top: -15%;
 }
 
+i.fas.fa-search{
+    position: relative;
+    bottom: 7px;
+}
+
 /*******************************
 *                              *
 *      ABOUT US SECTION        *
@@ -1126,6 +1131,10 @@ body.modal-open {
   .v-banner-mobile {
     display: none !important;
   }
+
+  i.fas.fa-search{
+    bottom: 0;
+}
 
   .display-mobile {
     display: block !important;
