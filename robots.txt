@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+
+https://caffeinemoment-3c13121aaa8c.herokuapp.com/sitemap.xml
