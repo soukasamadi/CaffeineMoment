@@ -1008,6 +1008,14 @@ h1.404-page{
     font-size: 18px;
 }
 
+.icon.er-p-bt,
+.text-er{
+    color:var(--iterative-color);
+}
+
+.er-p-bt{
+    border: 2px solid var(--iterative-color);
+}
 
 /*******************************
 *                              *
