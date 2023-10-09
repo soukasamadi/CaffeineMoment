@@ -8,6 +8,7 @@ class BannerVertical(admin.ModelAdmin):
     """
     Displays the Banner Vertical model in the admin panel
     """
+
     list_display = (
         "name",
         "description",

@@ -13,11 +13,8 @@ def reviews(request):
     """
     Renders the reviews page
     """
-    reviews_list = (
-        Reviews.objects.all().filter(approved=True).order_by("-timestamp"))
-    return render(
-        request,
-        "reviews/reviews.html", {"reviews_list": reviews_list})
+    reviews_list = Reviews.objects.all().filter(approved=True).order_by("-timestamp")
+    return render(request, "reviews/reviews.html", {"reviews_list": reviews_list})
 
 
 class AddReview(LoginRequiredMixin, SuccessMessageMixin, CreateView):

@@ -4,28 +4,44 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Reviews',
+            name="Reviews",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('review_title', models.CharField(max_length=100)),
-                ('name', models.CharField(max_length=20)),
-                ('image', models.ImageField(blank=True, null=True, upload_to='reviews_images/')),
-                ('timestamp', models.DateTimeField(auto_now_add=True)),
-                ('service_review', models.TextField(max_length=400, null=True)),
-                ('service_rating', models.DecimalField(blank=True, decimal_places=2, max_digits=6, null=True)),
-                ('approved', models.BooleanField(default=False)),
-                ('carousel_review', models.BooleanField(default=False)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("review_title", models.CharField(max_length=100)),
+                ("name", models.CharField(max_length=20)),
+                (
+                    "image",
+                    models.ImageField(
+                        blank=True, null=True, upload_to="reviews_images/"
+                    ),
+                ),
+                ("timestamp", models.DateTimeField(auto_now_add=True)),
+                ("service_review", models.TextField(max_length=400, null=True)),
+                (
+                    "service_rating",
+                    models.DecimalField(
+                        blank=True, decimal_places=2, max_digits=6, null=True
+                    ),
+                ),
+                ("approved", models.BooleanField(default=False)),
+                ("carousel_review", models.BooleanField(default=False)),
             ],
             options={
-                'verbose_name_plural': 'Reviews',
+                "verbose_name_plural": "Reviews",
             },
         ),
     ]

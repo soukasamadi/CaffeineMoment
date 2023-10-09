@@ -6,6 +6,7 @@ class CustomClearableFileInput(ClearableFileInput):
     """
     Custom widget file
     """
+
     clear_checkbox_label = _("Remove")
     initial_text = _("Current Image")
     input_text = _("")

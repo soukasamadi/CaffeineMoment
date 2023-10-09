@@ -6,6 +6,7 @@ class UserProfileForm(forms.ModelForm):
     """
     Create the User Profile form information
     """
+
     class Meta:
         model = UserProfile
         exclude = ("user",)
