@@ -11,6 +11,5 @@ def contact(request):
         message = request.POST['message']
         new_contact = Contact(name=name, email=email, message=message)
         new_contact.save()
-        messages.success(request, 'Thank you for contacting us. We will get back to you.')
-        
+        messages.success(request, 'Thank you for contacting us. We will get back to you.')        
     return render(request, "contact/contact.html")
