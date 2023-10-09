@@ -3,7 +3,7 @@
 *        GOOGLE FONTS          *
 *                              *
 *******************************/
-
+.rv-btn
 @import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
 
 /* Sofia Sans Condensed & Montserrat & Nanum Myeongjo*/
@@ -960,14 +960,14 @@ body.modal-open {
 
 .rv-btn {
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--fully-black);
   border: 1px solid #000;
-  color: var(--fully-black);
+  color: #ffffff;
 }
 
 .rv-btn:hover {
-  background-color: var(--fully-black);
-  color: #ffffff;
+  background-color: #ffffff;
+  color: var(--fully-black);
 }
 
 .ship-charge {
