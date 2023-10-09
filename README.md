@@ -100,13 +100,97 @@ Wireframes for this project are located [here](WIREFRAMES.md)
 ![Home Page](./assets/readme/features/home-page.jpeg)
 
 
-The home page is equipped with a video on the top.
+- The home page is equipped with a video on the top.
 users will see a variety of products selected by the website admin. It can be used to highlight special
 or popular products. The website admin can choose the displayed products by selecting a product in
 the admin panel or from the website front-end by clicking on the featured box.<br>
 User can get more information about the company reading the accordion on the about us section.<br>
 They can subscribe to the newsletter using the form bellow.<br>
-The footer section is qite simpe and clean to give the luxury feeling.
+The footer section is qite simpe and clean to give the luxury feeling.<br>
+
+![Shop Page](./assets/readme/features/shop-page.jpeg)
+
+- On this page, users will see all the products available on thewebsite such as product details. For example,
+if the user is interested in the product they can press the image to see more details. They can also sort products by price, name, rating and category. Furthermore, when the site admin is logged in, it can edit or delete products.<br>
+
+### Products Details
+
+![Product Details ](./assets/readme/features/product-details.jpg)
+
+- This feature is at the top of the Product Details Page. Here users can see the product image and product
+information such as price, category and rating. If the user is interested in it they can
+choose the product  quantity and add the product to their cart. Also, the user can leave the
+page by pressing the button "Keep Shopping".<br>
+
+- Scrolling down, the user will have access to the full product details such as  features and  details.<br>
+- In this feature users, can see a selection of products on sale. The sale items are chosen by the website admin by adding an old price and changing the product status to sale. This is completed through the admin panel or from the website front-end.<br>
+
+### Products Shopping Bag
+
+![Products Shopping Bag](./assets/readme/features/bag-page.jpeg)
+
+- This feature is called the Shopping bag. Here, users can add products and quantities. Check the total price, and delivery costs and go to the secure checkout to finish the order. Before secure checkout. the user can also change the quantity and remove unwanted products. The user can also leave this page by pressing the button "Keep Shopping".<br>
+
+
+### Products Checkout
+
+![Products Checkout](./assets/readme/features/checkout-page.jpeg)
+
+- On the checkout page, users will have to fill out the form and add the credit/debit card details to finish the purchase.<br>
+- On the checkout page, users will have to fill out the form and add their credit/debit card details to finish the purchase.<br>
+
+### Products Management
+
+![Products Management](./assets/readme/features/product-management.jpeg)
+
+- When the website admin is logged in on this page, they can add a new product to the website without going to the admin panel.<br>
+
+### Profile Page
+
+![Profile Page](./assets/readme/features/profile-page.jpeg)
+
+- On this page a logged in user (with a valid registration account) can add or edit their own personal details and also check previous orders.<br>
+
+#### Add/Edit Service Review Page
+
+![Add/Edit Service Review Page](./assets/readme/features/add-review-page.jpeg)
+
+- On this page a user with a valid registration account and logged in can add or edit their own personal service reviews.<br>
+
+### Logins Pages
+![Signup Page](./assets/readme/features/sign-up-page.jpeg)
+
+- After submitting the Signup form, the user will be redirected to this page, advising them to check the link sent to their email box.<br>
+
+![login Page](./assets/readme/features/login-page.jpeg)
+
+- On the Login Page, users can log in to the website by inputting their username and password. The user is now
+registered and will have access to the Registered User website services.<br>
+
+![logout Page](./assets/readme/features/logout-page.jpeg)
+
+- On the Logout Page, users can confirm that they wish to exit the website.<br>
+
+
+### Page 404 - Page Not Found
+
+![Page 404 - Page Not Found](./assets/readme/features/404-page.jpeg)
+
+- The user will see this feature when the page that the user is looking for, does not exist or for any typing URL error.<br>  
+
+<strong>To see more pages and feature visite the live website.</strong>
+[Live Project Here!](https://caffeinemoment-3c13121aaa8c.herokuapp.com/)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
