@@ -1,9 +1,9 @@
 from django.contrib import admin
-from contact.models import contactUs
+from contact.models import Contact
 
 
-class contactUsAdmin(admin.ModelAdmin):
+class ContactUsAdmin(admin.ModelAdmin):
     list_display = ['name', 'email', 'message']
 
 
-admin.site.register(contactUs, contactUsAdmin)
+admin.site.register(Contact, ContactUsAdmin)

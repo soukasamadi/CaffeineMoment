@@ -28,17 +28,19 @@
         </div>
         <div class="row mt-5">
             <div class="col-md-8 mx-auto">
-                <form _lpchecked="1" id="contact-form-ajax">
+                <form method="post">
+                    <!-- <form _lpchecked="1" id="contact-form-ajax"> -->
                     {% csrf_token %}
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control"  id="name"  name="name" placeholder="Your name">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="email" class="form-control" id="email"  name="email" placeholder="Your email address">
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Your email address">
                             </div>
                         </div>
                         <div class="col-12">
@@ -49,12 +51,12 @@
                         </div>
                     </div>
                     <div class="text-center mt-3">
-                        <button class="btnn btn-primary">Send your quote</button>
+                        <button class="btnn btn-primary" type="submit">Send your quote</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
     </div>
-<!-- END CONTACT SECTION  -->
-{% endblock %}
+    <!-- END CONTACT SECTION  -->
+    {% endblock %}
