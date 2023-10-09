@@ -1,26 +1,36 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
-<div class="container header-container">
-  <div class="row">
-    <div class="col"></div>
-  </div>
-</div>
-<div class="container h-100">
-  <div class="row h-100">
-    <div class="col-7 col-md-6 my-auto">
-      <h1 class="display-4 logo-font text-black">
-        Sorry! The page you are looking for is not availabe.
-      </h1>
-      <div class="my-5">
-        <h4>
-          <a
-            href="{% url 'products' %}"
-            class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3"
-          >
-            Return to shop
+{% extends 'base.html' %} 
+{% load static %} 
+
+{% block page_header %}
+<!-- BLOCK PAGE HEADER -->
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+<!-- END OF BLOCK PAGE HEADER -->
+{% endblock %}
+
+{% block content %}
+<!-- PAGE  404 SECTION -->
+<section id="page-404">
+  <div class="container h-100 p-3">
+    <div class="row h-100">
+      <div class="col-mobile col-md-10 my-auto">
+        <h1 class="404-text">PAGE NOT FOUND</h1>
+        <p class="logo-font 404-text">
+          This coffe is unfortunately still<br/>
+          not ready  
+        </p>
+        <div class="my-5">
+          <a href="{% url 'products' %}" aria-label="Go back yo the add products page" class="btn btn-outline-black rounded-0 btn-lg">
+            <span class="icon"><i class="fas fa-chevron-left interactive-color"></i></span>
+            <span class="text-uppercase">Return to Shop</span>
           </a>
-        </h4>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+<!-- END OF  PAGE  404 SECTION -->
 {% endblock %}
