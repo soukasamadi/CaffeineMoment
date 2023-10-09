@@ -1,68 +1,78 @@
 {% load static %} {% block content %}
-<!-- PRODUCTS ON SALES SECTION -->
+<!-- PRODUCTS SELECTED SECTION -->
 <section id="products_selected" class="container">
-  <hr />
-  <h2 class="sub-title">Products on Sale</h2>
-  <div class="container my-5">
-    <div class="row">
-      <div class="col-12 m-auto">
-        <div class="owl-theme">
-          {% for product in products_sales %}
-          <div class="card card-owl h-100 border-0">
-            {% if product.image %}
-            <a href="{% url 'product_detail' product.id %}">
-              <img
-                class="card-img-top img-fluid w-75 product-img"
-                src="{{ product.image.url }}"
-                alt="{{ product.name }} Image"
-              />
-            </a>
-            {% else %}
-            <a href="{% url 'product_detail' product.id %}">
-              <img
-                class="card-img-top img-fluid w-75 product-img"
-                src="{{ MEDIA_URL }}noimage.png"
-                alt="{{ product.name }} Image"
-              />
-            </a>
-            {% endif %}
-            <div class="card-body pb-0">
-              <p class="mb-0">{{ product.name }}</p>
-            </div>
-            <div class="card-footer bg-white pt-0 border-0 text-left">
-              <div class="row">
-                <div class="col">
-                  {% if product.old_price %}
-                  <p class="lead mb-0 text-left font-weight-bold line-through">
-                    €{{ product.old_price}}
-                  </p>
-                  <p class="lead mb-0 text-left font-weight-bold text-success">
-                    €{{ product.price }}
-                  </p>
-                  {% else %}
-                  <p class="lead mb-0 text-left font-weight-bold">
-                    €{{ product.price }}
-                  </p>
-                  {% endif %} {% if product.category %}
-                  <p class="small mt-1 mb-0">
-                    <a
-                      class="text-muted"
-                      href="{% url 'products' %}?category={{ product.category.name | urlencode }}"
-                    >
-                      <i class="fa regular fa-clock interactive-color"></i>
-                      {{product.category.friendly_name }}
-                    </a>
-                  </p>
-                  {% endif %}
-                </div>
-              </div>
+  <h2 class="sub-title">Discover Prodects on Sale</h2>
+  <div class="row">
+    {% for product in products_sales %}
+    <div class="col-sm-12 col-md-4">
+      <div class="card h-100 border-0">
+        {% if product.image %}
+        <a href="{% url 'product_detail' product.id %}">
+          <img
+            class="card-img-top img-fluid"
+            src="{{ product.image.url }}"
+            alt="{{ product.name }}"
+          />
+        </a>
+        {% else %}
+        <a href="{% url 'product_detail' product.id %}">
+          <img
+            class="card-img-top img-fluid"
+            src="{{ MEDIA_URL }}noimage.png"
+            alt="{{ product.name }}"
+          />
+        </a>
+        {% endif %}
+        <div class="card-body pb-0">
+          <p class="mb-0">{{ product.name }}</p>
+        </div>
+        <div class="card-footer bg-white pt-0 border-0 text-left">
+          <div class="row">
+            <div class="col">
+              {% if product.old_price %}
+              <p class="lead mb-0 text-left font-weight-bold line-through">
+                €{{ product.old_price }}
+              </p>
+              <p class="lead mb-0 text-left font-weight-bold text-success">
+                €{{ product.price }}
+              </p>
+              {% else %}
+              <p class="lead mb-0 text-left font-weight-bold">
+                €{{ product.price }}
+              </p>
+              {% endif %} {% if product.category %}
+              <p class="small mt-1 mb-0">
+                <a
+                  class="text-muted"
+                  href="{% url 'products' %}?category={{ product.category.name }}"
+                >
+                  {{ product.category.friendly_name }}
+                </a>
+              </p>
+              {% endif %}
             </div>
           </div>
-          {% endfor %}
         </div>
       </div>
     </div>
+    {% if forloop.counter|divisibleby:1 %}
+    <div class="col-12 d-sm-none mb-5">
+      <hr />
+    </div>
+    {% endif %} {% if forloop.counter|divisibleby:2 %}
+    <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+      <hr />
+    </div>
+    {% endif %} {% if forloop.counter|divisibleby:3 %}
+    <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+      <hr />
+    </div>
+    {% endif %} {% if forloop.counter|divisibleby:4 %}
+    <div class="col-12 d-none d-xl-block mb-5">
+      <hr />
+    </div>
+    {% endif %} {% endfor %}
   </div>
 </section>
-<!-- END OF PRODUCTS ON SALES SECTION -->
+<!-- END OF PRODUCTS SELECTED SECTION -->
 {% endblock content %}
