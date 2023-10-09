@@ -108,6 +108,8 @@ User can get more information about the company reading the accordion on the abo
 They can subscribe to the newsletter using the form bellow.<br>
 The footer section is qite simpe and clean to give the luxury feeling.<br>
 
+### Shop Page
+
 ![Shop Page](./assets/readme/features/shop-page.jpeg)
 
 - On this page, users will see all the products available on thewebsite such as product details. For example,
@@ -115,7 +117,7 @@ if the user is interested in the product they can press the image to see more de
 
 ### Products Details
 
-![Product Details ](./assets/readme/features/product-details.jpg)
+![Product Details ](./assets/readme/features/product-details.jpeg)
 
 - This feature is at the top of the Product Details Page. Here users can see the product image and product
 information such as price, category and rating. If the user is interested in it they can
