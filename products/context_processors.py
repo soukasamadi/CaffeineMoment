@@ -12,12 +12,12 @@ def products_selected(request):
     return context
 
 
-def products_promotion(request):
-    """ A view to show promotion products """
-    products_promotion = Product.objects.filter(promotion=True)
+def products_sales(request):
+    """ A view to show sales products """
+    products_sales = Product.objects.filter(product_status__name="Sales")
 
     context = {
-        'products_promotion': products_promotion,
+        'products_sales': products_sales,
     }
 
     return context

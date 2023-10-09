@@ -81,7 +81,7 @@ TEMPLATES = [
                 'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
                 'products.context_processors.products_selected',
-                'products.context_processors.products_promotion',
+                'products.context_processors.products_sales',
                 'banners.context_processors.banner_vertival'
             ],
             'builtins': [
