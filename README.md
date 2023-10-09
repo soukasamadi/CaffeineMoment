@@ -64,7 +64,7 @@ All functionality and development of this project were managed using GitHub whic
 
 #### Colours
 
-![Colours Palete](./assets/readme/extras/olor-panel.jpg)<br>
+![Colours Palete](./assets/readme/extras/color-panel.jpg)<br>
 
 - The colour scheme is kept simple by opting for a combination of white text set against the image
 background and black text set against the white background. The navbar was set on a white background
