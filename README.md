@@ -160,14 +160,22 @@ page by pressing the button "Keep Shopping".<br>
 - On this page a user with a valid registration account and logged in can add or edit their own personal service reviews.<br>
 
 ### Logins Pages
-![Signup Page](./assets/readme/features/sign-up-page.jpeg)
+
+#### Signup Page
+
+![Signup Page](./assets/readme/features/signup-page.jpeg)
 
 - After submitting the Signup form, the user will be redirected to this page, advising them to check the link sent to their email box.<br>
+
+#### Login Page
+
 
 ![login Page](./assets/readme/features/login-page.jpeg)
 
 - On the Login Page, users can log in to the website by inputting their username and password. The user is now
 registered and will have access to the Registered User website services.<br>
+
+#### Logout Page
 
 ![logout Page](./assets/readme/features/logout-page.jpeg)
 
