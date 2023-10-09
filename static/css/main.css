@@ -400,6 +400,75 @@ form .mce_inline_error{
 
 /*******************************
 *                              *
+*         Contact Page         *
+*                              *
+*******************************/
+
+.contact-top-img{
+    padding: 50vh 0;
+    text-align: center;
+    color: var(--iterative-color);
+    background-position: bottom;
+    background-size: contain;
+    margin-top: -170px;
+    background:linear-gradient(0deg, rgba(24, 3, 16, 0.3), rgba(50, 47, 49, 0.3)),url(https://b2b.leuchtfeuer.coffee/cdn/shop/files/specialty-coffee-wholesale-beans_2362x1370_crop_center.jpg?v=1679850527);
+    height: 100vh;
+}
+
+.contact-top-img h1{
+    font-family: 'Nanum Myeongjo', serif ;
+    letter-spacing: 6px;
+    font-size: 60px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.contact-top-img p{
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.form-control {
+    border-radius: 0px;
+    padding: 1rem 1.5rem;
+
+
+    color: #495057;
+    background-color: #ffffff;
+    border-color: #2c2c2d;
+
+
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #ffffff;
+    border: 2px solid #0d0e0d;
+    outline: 0;
+    box-shadow: none;
+
+}
+
+.btn {
+    background: #181818;
+    border-color: #181818;
+    padding: 0.7rem 4rem;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    background: #b5b6b3;
+    border: #b5b6b3;
+    outline: 0;
+}
+
+/*******************************
+*                              *
 *         HOME PAGE            *
 *                              *
 *******************************/
@@ -904,6 +973,11 @@ body.modal-open {
 .rv-btn:hover{
     background-color: var(--fully-black);
     color: #ffffff;
+}
+
+.ship-charge{
+    color: #333;
+    font-size: 14px;
 }
 
 
