@@ -17,7 +17,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['8000-soukasamadi-caffeinemome-05vwly98n6.us2.codeanyapp.com', 'caffeinemoment-3c13121aaa8c.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8007-soukasamadi-caffeinemome-05vwly98n6.us2.codeanyapp.com',
+                 'caffeinemoment-3c13121aaa8c.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -124,7 +125,7 @@ WSGI_APPLICATION = 'CaffeineMoment.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-       'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
@@ -185,7 +186,6 @@ AWS_S3_OBJECT_PARAMETERS = {
     'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
     'CacheControl': 'max-age=94608000',
 }
-
 
 if "USE_AWS" in os.environ:
     # Bucket Config

@@ -1,42 +1,56 @@
 {% load static %}
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     {% block meta %}
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     {% endblock %}
 
     <!-- SEO -->
-    <meta name="description" content="CaffeineMoment stands for quality focus and clear, sweet enjoyment of specialty coffee. ">
-    <meta name="keywords" content="Coffe, tasty coffe, coffe beans, caffeine, premium packs coffe, premium pick, morning coffe">
+    <meta
+      name="description"
+      content="CaffeineMoment stands for quality focus and clear, sweet enjoyment of specialty coffee. "
+    />
+    <meta
+      name="keywords"
+      content="Coffe, tasty coffe, coffe beans, caffeine, premium packs coffe, premium pick, morning coffe"
+    />
     <!-- END OF SEO -->
-    {% block extra_meta %}
-    {% endblock %}
-
-    {% block corecss %}
+    {% block extra_meta %} {% endblock %} {% block corecss %}
     <!-- BOOTSTRAP CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
     <!-- OWL CAROUSEL CDN -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
     <!-- MAILCHIMP SIGNUP FORM -->
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     {% endblock %}{% block extra_css %}
     <!-- BASE CSS -->
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
     <!-- REVIEWS CSS -->
-    <link rel="stylesheet" href="{% static 'reviews/css/reviews.css' %}">
+    <link rel="stylesheet" href="{% static 'reviews/css/reviews.css' %}" />
     <!-- PROFILE CSS -->
-    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
-    {% endblock %}
-    
-    {% block extra_js %}
+    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}" />
+    {% endblock %} {% block extra_js %}
     <!-- JQUERY CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
@@ -45,7 +59,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     {% endblock %}
     <!-- FAVICON-->
-    <link rel="icon" type="image/x-icon" href="{{ MEDIA_URL}}favicon.jpg">
+    <link rel="icon" type="image/x-icon" href="{{ MEDIA_URL}}favicon.jpg" />
     <!-- SITE TITLE -->
     <title>CaffeineMoment{% block extra_title %}{% endblock %}</title>
-    </head>
+  </head>
+</html>

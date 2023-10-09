@@ -45,7 +45,8 @@ def all_products(request):
         if 'product_status' in request.GET:
             product_status = request.GET['product_status'].split(',')
             products = products.filter(product_status__name__in=product_status)
-            product_status = ProductStatus.objects.filter(name__in=product_status)
+            product_status = ProductStatus.objects.filter(
+                name__in=product_status)
 
         if 'q' in request.GET:
             query = request.GET['q']
