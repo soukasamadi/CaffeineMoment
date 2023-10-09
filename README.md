@@ -68,16 +68,45 @@ All functionality and development of this project were managed using GitHub whic
 
 - The colour scheme is kept simple by opting for a combination of white text set against the image
 background and black text set against the white background. The navbar was set on a white background
-and a light grey on the bottom. The interactive colour is used for icons and the website logo.
-Yellow is used for the "Buy Now" buttons and red is used to the "Discover More" buttons. The Dark grey was used for the
-website footer. This contrasts with the rest of the website.
+and a light grey shadow on the bottom. The interactive colour is used for icons hover.
+green is used for some sections background.
 
 #### Typography
 
 - The Montserrat font is used as the main font for the whole project. The Sofia Sans Condensed & Nanum Myeongjo font is used to display the website logo and some titles.
 
+#### Imagery
+
+- Almost all the images were converted to webp format to improve the website performance. The product images and vertical banner are uploaded by the admin panel. 
+
+#### Video
+
+- On the home page, 2 videos playing under the navbar. One video is displayed on the desktop platform while
+the second video plays on the mobile platform. The two videos were both compressed to improve the website's performance.
+
+### Wireframes
+
+Wireframes for this project are located [here](WIREFRAMES.md)
+
+## Database Diagram
+
+![Database Diagrama](./assets/readme/extras/database_diagram.jpg)<br>
+
+## Features
+
+### Home Page
+
+![Home Page](./assets/readme/features/video-home.PNG)
+![Home Page](./assets/readme/features/home-page.jpeg)
 
 
+The home page is equipped with a video on the top.
+users will see a variety of products selected by the website admin. It can be used to highlight special
+or popular products. The website admin can choose the displayed products by selecting a product in
+the admin panel or from the website front-end by clicking on the featured box.<br>
+User can get more information about the company reading the accordion on the about us section.<br>
+They can subscribe to the newsletter using the form bellow.<br>
+The footer section is qite simpe and clean to give the luxury feeling.
 
 
 
