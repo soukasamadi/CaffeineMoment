@@ -22,7 +22,6 @@ class Reviews(models.Model):
         max_digits=6, decimal_places=2, null=True, blank=True
     )
     approved = models.BooleanField(default=False)
-    carousel_review = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name

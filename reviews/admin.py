@@ -14,5 +14,4 @@ class ReviewsAdmin(admin.ModelAdmin):
         "service_review",
         "service_rating",
         "approved",
-        "carousel_review",
     )
