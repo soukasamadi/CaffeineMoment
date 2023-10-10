@@ -90,7 +90,7 @@ Wireframes for this project are located [here](WIREFRAMES.md)
 
 ## Database Diagram
 
-![Database Diagrama](./assets/readme/extras/database_diagram.jpg)<br>
+![Database Diagrama](./assets/readme/extras/diagram.PNG)<br>
 
 ## Features
 
