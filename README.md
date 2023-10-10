@@ -11,7 +11,31 @@ The application has a good appearance with an easy, clear and concise site navig
 <p align="center"><img src="./assets/readme/features/am-i-responsive.PNG"
         alt="CaffeineMoment webpage on multiple devices"></p>
 
-### User Experience - UX
+README Table Content
+
+- [caffeineMoment - Introduction](#caffeinemoment---introduction)
+  - [User Experience - UK](#user-experience---ux)
+    - [User Stories](#user-stories)
+    - [Agile Methodology](#agile-methodology)
+    - [The Scope](#the-scope)
+      - [Main site goals](#main-site-goals)
+    - [Design](#design)
+        - [colours](#colours)
+        - [Typografy](#typography)
+        - [Imagery](#imagery)
+        - [Video](#video)
+      - [Wireframes](#wireframes)
+    - [Database Diagram](#database-diagram)
+    - [Features](#features)
+      - [Home Page](#home-page)
+      - [Shop Pgae](#shop-page)
+      - [Product Detail page](#products-details) 
+      - 
+
+
+
+
+## User Experience - UX
 
 ### User Stories
 
