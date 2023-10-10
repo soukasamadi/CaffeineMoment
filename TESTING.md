@@ -152,4 +152,8 @@ The Test case for this project can be found [here](TEST_CASE.md)
 I spent considerable time trying to fix newsletter form not sending the data to the server without success. Then I had a call with my mentor and he figured out a script code was added to the footer by fault. and it causes the issue. 
 
 
+### Unfixed Bugs
+
+The newsletter was working perfectly till now. I discover that it rednde a 404 error at the console. I oould't know the reason. It was working fine (sending data to the mailchimp dashbord and showing success/error message).
+
 
