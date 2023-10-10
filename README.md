@@ -355,7 +355,7 @@ is a screenshot of CaffeineMoment - Mailchimp dashboard.
 
 - To ensure that the Google engine will check the website sitemap file I have registered the CaffeineMoment URL on the Google Search Console.
 
-![CaffeineMoment - Robots.txt](./assets/readme/extras/meta-verification.PNG)<br>
+![CaffeineMoment - Robots.txt](./assets/readme/extras/Meta-verification.PNG)<br>
 
 ## AWS Setup Process
 
