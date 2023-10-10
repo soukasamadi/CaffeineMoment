@@ -1004,12 +1004,10 @@ body.modal-open {
     color: var(--text-white) !important;
 }
 
-h1.404-page{
-    font-size: 18px;
-}
 
-.icon.er-p-bt,
-.text-er{
+
+.text-er,
+.er-bt{
     color:var(--iterative-color);
 }
 
