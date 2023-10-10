@@ -1004,13 +1004,13 @@ body.modal-open {
     color: var(--text-white) !important;
 }
 
-.text-er,
-.er-bt{
-    color:var(--iterative-color);
+.text-er{
+    color: var(--iterative-color);
 }
 
 .er-bt{
     border: 2px solid var(--iterative-color);
+    color: var(--iterative-color);
 }
 
 /*******************************
