@@ -86,7 +86,10 @@ the second video plays on the mobile platform. The two videos were both compress
 
 ### Wireframes
 
-Wireframes for this project are located [here](WIREFRAMES.md)
+I used canvas app to create my wireframe:
+
+- This is an anxample of how I designed my mockup : 
+![wireframe](./assets/readme/extras/wireframe.PNG)<br>
 
 ## Database Diagram
 
