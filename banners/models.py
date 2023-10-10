@@ -11,9 +11,9 @@ class BannerVertical(models.Model):
 
     name = models.CharField(max_length=254)
     description = models.TextField()
-    image = models.ImageField(upload_to="Banner/", null=True, blank=True)
+    image = models.ImageField(upload_to="banners/", null=True, blank=True)
     image_small = models.ImageField(
-        upload_to="Banner/", null=True, blank=True)
+        upload_to="banners/", null=True, blank=True)
     featured = models.BooleanField(default=False)
 
     def __str__(self):
